@@ -37,6 +37,6 @@ for file in txt_file:
         add_data = pd.Series({'text':text[i],'author':auther,'title':title})
         df = df.append(add_data, ignore_index=True)
 
-print(df.head(4))
-print(df.tail(4))
+print(df.head(10))
+#print(df.tail(4))
 df.to_csv("/Users/nosuke/Desktop/2022_1st_half/Datamining/report3/out_files/level1.txt")
